@@ -10,17 +10,6 @@ def browser_options():
     yield
     browser.quit()
 
-@pytest.fixture(scope="function", autouse=False)
-def google():
-    browser.config.base_url = 'https://google.com/'
-
-@pytest.fixture(scope="function", autouse=False)
-def yandex():
-    browser.config.base_url = 'https://ya.ru/'
-
-@pytest.fixture(scope="function", autouse=False)
-def duck():
-    browser.config.base_url = 'https://duckduckgo.com/'
 
 
 
